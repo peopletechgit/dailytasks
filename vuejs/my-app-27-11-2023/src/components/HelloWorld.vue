@@ -1,4 +1,4 @@
-<script setup>
+<!-- <script setup>
 import { ref } from "vue";
 const msg = ref("Hello World!");
 const currentTime = ref("");
@@ -56,4 +56,4 @@ const deleteMessage = (index) => {
       <button @click="addMessage">Add Message</button>
     </div>
   </div>
-</template>
+</template> -->
