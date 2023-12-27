@@ -1,0 +1,32 @@
+[
+    {
+        "name": "ramesh",
+        "email": "ramesh@gmail.com",
+        "mobile": "8392982893",
+        "city": ""
+    },
+    {
+        "name": "ramesh",
+        "email": "ramesh@gmail.com",
+        "mobile": "8392982893",
+        "city": "hyderabad"
+    },
+    {
+        "name": "ramesh",
+        "email": "ramesh@gmail.com",
+        "mobile": "8392982893",
+        "city": "hyderabad"
+    },
+    {
+        "name": "ramesh",
+        "email": "ramesh@gmail.com",
+        "mobile": "8392982893",
+        "city": null
+    },
+    {
+        "name": "hari",
+        "email": "hari@gmail.com",
+        "mobile": "9848507255",
+        "city": "machilipatnam"
+    }
+]
