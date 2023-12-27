@@ -1,0 +1,47 @@
+databases : 
+Download and Install the Mysql Work Bench..
+https://dev.mysql.com/downloads/windows/installer/8.0.html
+Step1: Connecting to the database..
+mysql -u username -p
+    enterpassword : *****
+Step2: List Databases.
+    show databases;
+Step3: create a database.
+    create database database-name;
+    create database python_8am_dec;
+Step4: Using the particular database.
+    use database-name;
+    use python_8am_dec;
+Step5 : creating the table..
+    create table table-name(column1 type,column2 type,column3 type);
+    create table player_info(p_name varchar(20),p_franchasis varchar(4),p_role varchar(10));
+Step6: Listing the tables.
+    show tables;
+Step7: Description of the table..
+    desc table-name;
+    desc player_info;
+Step8: Insert the data into the table..
+    insert into table-name(column1,column2,column3) values(value1,value2,value3);
+    insert into player_info(p_name,p_franchasis,p_role) values('Dhoni','CSK','Batsmen');
+    insert into player_info(p_name,p_franchasis,p_role) values('Kohli','RCB','Batsmen'),('Bumrah','MI','Bowler'),('Rohit','MI','Batsmen'),('Jadeja','CSK','Allrounder'),('Maxwell','RCB','Allrounder');
+Step9: Retreiving the data.
+    select * from table-name;
+    select * from player_info;
+    select p_name,p_role from player_info;
+    select * from player_info where condition;
+    select * from player_info where p_franchasis='CSK';
+    select * from player_info where p_role='Batsmen';
+    select * from player_info where p_role='Batsmen' and p_franchasis='RCB';
+    select * from player_info where p_role='Batsmen' or p_franchasis='RCB';
+Step10: Updating the data.
+    update table-name SET column1=value1,column2=value2 where condition;
+    update player_info SET p_role='Batsmen' where p_name='Maxwell';
+Step11: Changing the structure of table by adding new column..
+    alter table table-name add column-name datatype;
+    alter table player_info add p_price integer;
+Step12 : Deleting the record.
+    delete from table-name where condition;
+    delete from player_info where p_name='Dhoni';
+    truncate table-name;  -- will delete everything from the table and make it as empty..
+    drop table table-name ; -- This will delete the table from the DB.
+    drop database database-name; -- This will delte the database completely.
